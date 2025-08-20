@@ -31,16 +31,15 @@ def ataque2(inimigo):
 
 print("BEM VINDO AO SIMULADOR DE BATALHA")
 
-cura_jogador = 5
-cura_inimigo = 5
 jogador = guerreiro("felipe")
 inimigo = guerreiro("Paulo")
 
-while jogador.vida > 0 and inimigo.vida > 0:
-    ataque1(jogador)
-    ataque2(inimigo)
-
-    if inimigo.vida <= 0:
-        break
-    if jogador.vida <= 0:
-        break
+while True:
+    while True:
+        if jogador.vida > 0 and inimigo.vida > 0:
+            if jogador.vida > 0:
+                ataque1(jogador)
+            if inimigo.vida > 0:
+                ataque2(inimigo)
+        else:
+            break
