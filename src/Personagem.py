@@ -12,7 +12,7 @@ class personagem:
         dano = random.randint(1, self.ataque)
         inimigo.vida -= dano
         print(f"{self.nome} atacou {inimigo.nome} e causou {dano} de dano!")
-        if (dano > self.ataque * (2/3)):
+        if dano > self.ataque * (2 / 3):
             print("ATAQUE CRÍTICO!!")
         if (inimigo.vida <= 0):
             print(f"{inimigo.nome} derrotado!")
@@ -27,7 +27,6 @@ class personagem:
             print(f"{self.nome} já usou todas as 5 curas!")
             return
 
-        print(self.maxcura)
         self.maxcura -= 1
         cura = random.randint(1, 20)
         vida_faltante = self.maxvida - self.vida

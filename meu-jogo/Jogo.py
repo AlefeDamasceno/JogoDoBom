@@ -1,10 +1,7 @@
-import random
-
 ##Lazy Import
 from src import *
 
 print("BEM VINDO AO SIMULADOR DE BATALHA")
-
 
 jogador = classSet()
 inimigo = classSet()
