@@ -1,4 +1,4 @@
-from src.Personagem import personagem;
+from src.Personagem import personagem
 
 class guerreiro(personagem):
     def __init__(self, nome):
